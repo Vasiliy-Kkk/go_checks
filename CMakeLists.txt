@@ -14,7 +14,7 @@ string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 # hunter_add_package(GTest)
 # hunter_add_package(SFML)
 # find_package(GTest CONFIG REQUIRED)
-find_package(SFML 2 COMPONENTS window graphics system network)
+# find_package(SFML 2 COMPONENTS window graphics system network)
 
 add_library(go_game STATIC
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/Button.cpp \
@@ -29,15 +29,13 @@ add_executable(start_game
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
 )
 
-#target_include_directories(Go_game
-#  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 target_include_directories(Go_game
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 target_include_directories(start_game
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-target_link_libraries (start_game PUBLIC sfml-graphics sfml-window sfml-system sfml-network)
+# target_link_libraries (start_game PUBLIC sfml-graphics sfml-window sfml-system sfml-network)
 target_link_libraries (start_game PUBLIC Go_game)
 
 # target_link_libraries(tests GTest::gtest_main Go_game)
