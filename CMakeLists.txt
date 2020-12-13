@@ -16,7 +16,7 @@ string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 # find_package(GTest CONFIG REQUIRED)
 # find_package(SFML 2 COMPONENTS window graphics system network)
 
-add_library(go_game STATIC
+add_library(Go_game STATIC
   ${CMAKE_CURRENT_SOURCE_DIR}/libraries
 )
 
