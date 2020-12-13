@@ -36,7 +36,7 @@ TableStone::TableStone(sf::Vector2i&& _mouse, Table& table, bool _stone_color) {
         stone.setTexture(&Tablestone_texture);
     }
 
-};
+}
 TableStone::TableStone(int& x, int& y, Table& table, bool&& _stone_color) {
     x_t = x;
     y_t = y;
@@ -67,17 +67,9 @@ TableStone::TableStone(int& x, int& y, Table& table, bool&& _stone_color) {
 }
 
 TableStone::TableStone(TableStone& _stone) {
-    this->x_t = _stone.x_t;
-    this->y_t = _stone.y_t;
-    this->radius = _stone.radius;
-    this->Tablestone_texture = _stone.Tablestone_texture;
-    this->Tablestone_sprite = _stone.Tablestone_sprite;
-    this->stone = _stone.stone;
-    this->stone_color = _stone.stone_color;
-    this->size = _stone.size;
-
+    *this = _stone;
 }
-TableStone TableStone::operator=(TableStone& _stone) {
+TableStone* TableStone::operator=(TableStone& _stone) {
     this->x_t = _stone.x_t;
     this->y_t = _stone.y_t;
     this->radius = _stone.radius;
@@ -86,7 +78,7 @@ TableStone TableStone::operator=(TableStone& _stone) {
     this->stone = _stone.stone;
     this->stone_color = _stone.stone_color;
     this->size = _stone.size;
-    return *this;
+    return this;
 }
 bool TableStone::operator ==(TableStone&& _stone) {
     if (this->stone_color == _stone.stone_color
