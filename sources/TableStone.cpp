@@ -69,7 +69,7 @@ TableStone::TableStone(int& x, int& y, Table& table, bool&& _stone_color) {
 TableStone::TableStone(TableStone& _stone) {
     *this = _stone;
 }
-TableStone* TableStone::operator=(TableStone& _stone) {
+TableStone& TableStone::operator=(TableStone& _stone) {
     this->x_t = _stone.x_t;
     this->y_t = _stone.y_t;
     this->radius = _stone.radius;
@@ -78,7 +78,7 @@ TableStone* TableStone::operator=(TableStone& _stone) {
     this->stone = _stone.stone;
     this->stone_color = _stone.stone_color;
     this->size = _stone.size;
-    return this;
+    return *this;
 }
 bool TableStone::operator ==(TableStone&& _stone) {
     if (this->stone_color == _stone.stone_color
@@ -102,7 +102,7 @@ void TableStone::change_tablestone(sf::Vector2i&& _mouse, Table& table, bool& _s
         }
         stone.setTexture(&Tablestone_texture);
     }
-};
+}
 bool TableStone::check_stone() {
     if (this->x_t == 0 || this->y_t == 0) {
         return false;
@@ -115,7 +115,7 @@ bool TableStone::check_color() {
 }
 sf::CircleShape TableStone::displaystone() const {
     return stone;
-};
+}
 std::pair<int, int> TableStone::stone_coords(Table* _table) { //first - horisontal, second - vertical
     std::vector<int> x_coords = _table->get_doats_coordinate_x();
     std::vector<int> y_coords = _table->get_doats_coordinate_y();
