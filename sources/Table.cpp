@@ -83,6 +83,7 @@ std::vector<int>::iterator Table::return_iter_y() {
 bool Table::checkStoneCursor(sf::Vector2i _mouse) {
     int radius;
     int size;
+    size = 0;
     switch ((*this).return_tablesize()) {
     case 1:
         radius = 34;
