@@ -98,12 +98,13 @@ bool Table::checkStoneCursor(sf::Vector2i _mouse) {
         break;
     default: break;
     }
-    if (std::get<0>(Checkcoordinate(_mouse, radius, size, *this)) && std::get<1>(Checkcoordinate(_mouse, radius, size, *this))) {
+    if (std::get<0>(Checkcoordinate(_mouse, radius, *this)) && std::get<1>(Checkcoordinate(_mouse, radius, *this))) {
         return true;
     }
     else {
         return false;
     }
+    return false;
 }
 std::pair<int, int> Table::Checkcoordinate(sf::Vector2i _mouse, int radius, Table&& table) const {
     for (auto it_x : table.doats_coordinate_x) {
