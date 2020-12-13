@@ -12,12 +12,12 @@ Button::Button(double&& _x_t, double&& _y_t, std::string&& _text, int&& _text_si
     width = text.getLocalBounds().width;
     height = text.getLocalBounds().height;
 
-    text.setFillColor(sf::Color::Red);					// устанавливаем цвет текста
+    text.setColor(sf::Color::Red);					// устанавливаем цвет текста
     text.setPosition(x_t - width / 2, y_t - height);						// устанавливаем координаты текста
 
     box.setSize(sf::Vector2f(width, height));		// устанавливаем размер кнопки
     box.setPosition(x_t - width / 2, y_t - 3 * height / 5);						// устанавливаем координаты кнопки
-    box.setFillColor(sf::Color::White);	// устанавливаем цвет кнопки
+    box.setColor(sf::Color::White);	// устанавливаем цвет кнопки
     box.setOutlineThickness(2);					// устанавливаем Контур
     box.setOutlineColor(sf::Color(66, 66, 66));		// устанавливаем Цвет контура
 }
@@ -33,12 +33,12 @@ Button::Button(double&& _x_t, double&& _y_t, int&& _text_size) {
     width = text.getLocalBounds().width;
     height = text.getLocalBounds().height;
 
-    text.setFillColor(sf::Color::Red);					// устанавливаем цвет текста
+    text.setColor(sf::Color::Red);					// устанавливаем цвет текста
     text.setPosition(x_t - width / 2, y_t - height);						// устанавливаем координаты текста
 
     box.setSize(sf::Vector2f(width, height));		// устанавливаем размер кнопки
     box.setPosition(x_t - width / 2, y_t - 3 * height / 5);						// устанавливаем координаты кнопки
-    box.setFillColor(sf::Color(240, 100, 100));	// устанавливаем цвет кнопки
+    box.setColor(sf::Color(240, 100, 100));	// устанавливаем цвет кнопки
     box.setOutlineThickness(2);					// устанавливаем Контур
     box.setOutlineColor(sf::Color(66, 66, 66));		// устанавливаем Цвет контура
 }
@@ -55,12 +55,12 @@ Button::Button(double&& _x_t, double&& _y_t, int& score, int&& _text_size) {
     width = text.getLocalBounds().width;
     height = text.getLocalBounds().height;
 
-    text.setFillColor(sf::Color::Red);					// устанавливаем цвет текста
+    text.setColor(sf::Color::Red);					// устанавливаем цвет текста
     text.setPosition(x_t - width / 2, y_t - height);						// устанавливаем координаты текста
 
     box.setSize(sf::Vector2f(width, height));		// устанавливаем размер кнопки
     box.setPosition(x_t - width / 2, y_t - 3 * height / 5);						// устанавливаем координаты кнопки
-    box.setFillColor(sf::Color(240, 100, 100));	// устанавливаем цвет кнопки
+    box.setColor(sf::Color(240, 100, 100));	// устанавливаем цвет кнопки
     box.setOutlineThickness(2);					// устанавливаем Контур
     box.setOutlineColor(sf::Color(66, 66, 66));		// устанавливаем Цвет контура
 }
@@ -94,10 +94,10 @@ void Button::delete_letter() {
     }
 }
 void Button::changeTextColor() {
-    text.setFillColor(sf::Color(240, 100, 100));
+    text.setColor(sf::Color(240, 100, 100));
 }
 void Button::changeTextColorBack() {
-    text.setFillColor(sf::Color::Red);
+    text.setColor(sf::Color::Red);
 }
 void Button::emptytext() {
     str_text.clear();
