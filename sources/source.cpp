@@ -13,6 +13,6 @@ int main()
 				sf::RenderWindow window(sf::VideoMode(scrX, scrY), "Go", sf::Style::Close);
 				window.setVerticalSyncEnabled(true); //âåðòèêàëüíàÿ ñèíõðîíèçàöèÿ îêíà
 				MainMenu menu(scrX, scrY);
-				menu.print_window(window);
+			//	menu.print_window(window);
 				return 0;
 }
