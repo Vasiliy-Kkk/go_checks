@@ -15,7 +15,7 @@ string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 # hunter_add_package(SFML)
 # find_package(GTest CONFIG REQUIRED)
 # find_package(SFML 2 COMPONENTS window graphics system network)
-
+SET_TARGET_PROPERTIES(Go_game PROPERTIES LINKER_LANGUAGE CXX)
 add_library(Go_game STATIC
   ${CMAKE_CURRENT_SOURCE_DIR}/libraries
 )
