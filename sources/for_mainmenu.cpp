@@ -23,7 +23,8 @@ std::pair<int, int> return_stone_coordinate(const std::pair<int, int>& _pair, in
 								return std::make_pair(x, y);
 								break;
 				default: break;
-				}
+				}								
+				return std::make_pair(x, y);
 }
 std::list<std::pair<int, int>>::iterator& operator+=(std::list < std::pair<int, int>>::iterator& it, int x) {
 				for (auto i = 0; i < x; ++i) {
