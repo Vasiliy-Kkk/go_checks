@@ -17,12 +17,7 @@ string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 # find_package(SFML 2 COMPONENTS window graphics system network)
 
 add_library(go_game STATIC
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/Button.cpp \
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/MainMenu.cpp \
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/Table.cpp \
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/TableStone.cpp \
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/for_mainmenu.cpp \
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/math_functions.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/libraries
 )
 
 add_executable(start_game
