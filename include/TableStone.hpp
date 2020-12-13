@@ -5,7 +5,7 @@
 #include <vector>
 #include "Table.hpp"
 
-class TableStone : Table {
+class TableStone {
 private:
     int x_t; //координаты камня
     int y_t;
@@ -19,10 +19,10 @@ protected:
 
 public:
     TableStone();
-    TableStone(TableStone& stone);
+    explicit TableStone(TableStone& stone);
     TableStone(sf::Vector2i&& _mouse, Table& table, bool _stone_color);
     TableStone(int& x, int& y, Table& table, bool&& _stone_color);
-    TableStone operator=(TableStone& _stone);
+    TableStone& operator=(TableStone& _stone);
     bool operator ==(TableStone&& _stone);
     void change_tablestone(sf::Vector2i&& _mouse, Table& table, bool& _stone_color);
     bool check_stone();

@@ -14,13 +14,12 @@ private:
     sf::Sprite Tablestone_sprite;  //спрайт камни
     std::vector<int> doats_coordinate_x; //координаты пересечений на доске
     std::vector<int> doats_coordinate_y;
-protected:
-    std::pair<int, int> Checkcoordinate(sf::Vector2i _mouse, int radius, Table&& table) const; //возвращает координату камня, зависящую от координаты курсора
-    std::pair<int, int> Checkcoordinate(sf::Vector2i _mouse, int radius, Table& table) const;
-public:
+public:    
     Table();
     Table(int& _tablesize);
     Table(int&& _tablesize);
+    std::pair<int, int> Checkcoordinate(sf::Vector2i _mouse, int radius, Table&& table) const; //возвращает координату камня, зависящую от координаты курсора
+    std::pair<int, int> Checkcoordinate(sf::Vector2i _mouse, int radius, Table& table) const;
     int return_tablesize() const;
     sf::Sprite displaytablesprite() const;
     std::vector<int>::iterator return_iter_x();
