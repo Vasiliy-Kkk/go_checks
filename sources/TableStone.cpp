@@ -23,8 +23,8 @@ TableStone::TableStone(sf::Vector2i&& _mouse, Table& table, bool _stone_color) {
     }
     stone_color = _stone_color;
     stone.setRadius(radius);
-    x_t = std::get<0>(Checkcoordinate(_mouse, radius, size, table));
-    y_t = std::get<1>(Checkcoordinate(_mouse, radius, size, table));
+    x_t = std::get<0>(Checkcoordinate(_mouse, radius, table));
+    y_t = std::get<1>(Checkcoordinate(_mouse, radius, table));
     if (x_t && y_t) {
         stone.setPosition(x_t - radius, y_t - radius);
         if (stone_color) {
@@ -98,8 +98,8 @@ bool TableStone::operator ==(TableStone&& _stone) {
     }
 }
 void TableStone::change_tablestone(sf::Vector2i&& _mouse, Table& table, bool& _stone_color) {
-    this->x_t = std::get<0>(Checkcoordinate(_mouse, radius, size, table));
-    this->y_t = std::get<1>(Checkcoordinate(_mouse, radius, size, table));
+    this->x_t = std::get<0>(Checkcoordinate(_mouse, radius, table));
+    this->y_t = std::get<1>(Checkcoordinate(_mouse, radius, table));
     if (x_t && y_t) {
         stone.setPosition(x_t - radius, y_t - radius);
         if (_stone_color) {
