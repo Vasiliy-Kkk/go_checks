@@ -488,15 +488,15 @@ void MainMenu::print_table(sf::RenderWindow& window) {
 																Push_Stone.changeTextColor();
 																if (sf::Mouse::isButtonPressed(sf::Mouse::Left) && begin_flag && dontpush_stone_flag && !waiting_answer_flag) {
 																				add_stone(pushed_stone);
-																				whitescorebut.change_text(white_score);
-																				blackscorebut.change_text(black_score);
+																			//	whitescorebut.change_text(white_score);
+																			//	blackscorebut.change_text(black_score);
 																				dontpush_stone_flag = false;
 																}
 																push_flag = true;
 												}
 												if (changed_score) {
-																whitescorebut.change_text(white_score);
-																blackscorebut.change_text(black_score);
+															//	whitescorebut.change_text(white_score);
+															//	blackscorebut.change_text(black_score);
 																changed_score = false;
 												}
 												if (!disconnect_flag) {

@@ -106,10 +106,10 @@ void Button::emptytext() {
 bool Button::isempty() {
     return str_text.empty();
 }
-void Button::change_text(int& score) {
-    str_text = std::to_string(score);
-    text.setString(str_text);
-}
+//void Button::change_text(int& score) {
+//    str_text = std::to_string(score);
+//    text.setString(str_text);
+//}
 std::string Button::get_text() {
     return str_text;
 }
