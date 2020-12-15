@@ -43,12 +43,6 @@
 				"file" : 0,
 				"line" : 31,
 				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 37,
-				"parent" : 0
 			}
 		]
 	},
@@ -69,10 +63,6 @@
 				{
 					"backtrace" : 2,
 					"path" : "C:/Users/Василий/Documents/GitHub/go_checks/include"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "C:/Users/Василий/Documents/GitHub/go_checks/SFML-include"
 				}
 			],
 			"language" : "CXX",

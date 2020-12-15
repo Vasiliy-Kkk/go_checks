@@ -34,12 +34,12 @@ target_include_directories(Go_game
 target_include_directories(start_game
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-target_include_directories(Go_game
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/SFML-include
-)
-target_include_directories(start_game
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/SFML-include
-)
+# target_include_directories(Go_game
+#   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/SFML-include
+# )
+# target_include_directories(start_game
+#   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/SFML-include
+# )
 
 target_link_libraries(start_game sfml-network
                                  sfml-graphics
