@@ -105,26 +105,6 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "..\\..\\..\\lib\\sfml-system",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "..\\..\\..\\lib\\sfml-window",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "..\\..\\..\\lib\\sfml-graphics",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "..\\..\\..\\lib\\sfml-network",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
 				"fragment" : "Go_game.lib",
 				"role" : "libraries"
 			},
