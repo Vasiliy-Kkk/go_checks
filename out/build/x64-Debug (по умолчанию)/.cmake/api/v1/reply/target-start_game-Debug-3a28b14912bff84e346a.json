@@ -105,22 +105,22 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "..\\..\\..\\bin\\sfml-network",
+				"fragment" : "sfml-network.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "..\\..\\..\\bin\\sfml-graphics",
+				"fragment" : "sfml-graphics.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "..\\..\\..\\bin\\sfml-window",
+				"fragment" : "sfml-window.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "$CMAKE_CURRENT_SOURCE_DIR}/bin/sfml-system",
+				"fragment" : "sfml-system.lib",
 				"role" : "libraries"
 			},
 			{
