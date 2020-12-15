@@ -134,10 +134,10 @@ build CMakeFiles\start_game.dir\sources\source.cpp.obj: CXX_COMPILER__start_game
 #############################################
 # Link the executable start_game.exe
 
-build start_game.exe: CXX_EXECUTABLE_LINKER__start_game_Debug CMakeFiles\start_game.dir\sources\source.cpp.obj | Go_game.lib || Go_game.lib
+build start_game.exe: CXX_EXECUTABLE_LINKER__start_game_Debug CMakeFiles\start_game.dir\sources\source.cpp.obj | ..\..\..\bin\sfml-network ..\..\..\bin\sfml-graphics ..\..\..\bin\sfml-window Go_game.lib || Go_game.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc -pthread -pedantic -Werror -Wall -Wextra -Wno-unused-command-line-argument -Wshadow -Wnon-virtual-dtor /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = sfml-system.lib  sfml-window.lib  sfml-graphics.lib  sfml-network.lib  Go_game.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = ..\..\..\bin\sfml-network  ..\..\..\bin\sfml-graphics  ..\..\..\bin\sfml-window  $CMAKE_CURRENT_SOURCE_DIR}/bin/sfml-system  Go_game.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\start_game.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
