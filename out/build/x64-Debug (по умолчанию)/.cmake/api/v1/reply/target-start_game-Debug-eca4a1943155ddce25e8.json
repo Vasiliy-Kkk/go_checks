@@ -105,22 +105,22 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "sfml-network.lib",
+				"fragment" : "sfml-network-2.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "sfml-graphics.lib",
+				"fragment" : "sfml-graphics-2.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "sfml-window.lib",
+				"fragment" : "sfml-window-2.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "sfml-system.lib",
+				"fragment" : "sfml-system-2.lib",
 				"role" : "libraries"
 			},
 			{

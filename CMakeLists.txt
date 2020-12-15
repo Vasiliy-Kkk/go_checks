@@ -35,10 +35,10 @@ target_include_directories(Go_game
 target_include_directories(start_game
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-target_link_libraries(start_game sfml-network
-                                 sfml-graphics 
-                                 sfml-window
-                                 sfml-system
+target_link_libraries(start_game sfml-network-2
+                                 sfml-graphics-2
+                                 sfml-window-2
+                                 sfml-system-2
                                  Go_game
 )
 
