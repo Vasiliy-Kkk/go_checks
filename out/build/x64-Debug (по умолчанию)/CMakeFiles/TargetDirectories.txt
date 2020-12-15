@@ -1,4 +1,0 @@
-C:/Users/Василий/Documents/GitHub/go_checks/out/build/x64-Debug (по умолчанию)/CMakeFiles/Go_game.dir
-C:/Users/Василий/Documents/GitHub/go_checks/out/build/x64-Debug (по умолчанию)/CMakeFiles/start_game.dir
-C:/Users/Василий/Documents/GitHub/go_checks/out/build/x64-Debug (по умолчанию)/CMakeFiles/edit_cache.dir
-C:/Users/Василий/Documents/GitHub/go_checks/out/build/x64-Debug (по умолчанию)/CMakeFiles/rebuild_cache.dir
