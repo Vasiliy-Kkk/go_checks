@@ -15,7 +15,6 @@
 		[
 			"add_executable",
 			"target_link_libraries",
-			"include_directories",
 			"target_include_directories"
 		],
 		"files" : 
@@ -30,25 +29,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 28,
+				"line" : 27,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 38,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 12,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 2,
 				"file" : 0,
-				"line" : 35,
+				"line" : 40,
 				"parent" : 0
 			}
 		]
@@ -69,11 +68,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/Василий/Documents/GitHub/go_checks/SFML-include"
+					"path" : "C:/Users/Василий/Documents/GitHub/go_checks/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/Василий/Documents/GitHub/go_checks/include"
+					"path" : "C:/Users/Василий/Documents/GitHub/go_checks/SFML-include"
 				}
 			],
 			"language" : "CXX",
