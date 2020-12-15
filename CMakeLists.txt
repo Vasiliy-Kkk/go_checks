@@ -8,6 +8,12 @@ string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
 string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 
+add_library(sfml-system
+            sfml-window
+            sfml-graphics
+            sfml-network
+)
+
 add_library(Go_game STATIC
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/Button.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/MainMenu.cpp
@@ -27,5 +33,6 @@ target_include_directories(Go_game
 target_include_directories(start_game
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
+target_link_libraries(start_game sfml-system sfml-window sfml-graphics  sfml-network Go_game)
 
-target_link_libraries (start_game PUBLIC Go_game)
+# target_link_libraries (start_game PUBLIC Go_game)
