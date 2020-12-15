@@ -105,6 +105,26 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "sfml-system.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "sfml-window.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "sfml-graphics.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "sfml-network.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "Go_game.lib",
 				"role" : "libraries"
 			},
