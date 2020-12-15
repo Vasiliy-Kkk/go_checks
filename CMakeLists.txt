@@ -1,14 +1,15 @@
 cmake_minimum_required(VERSION 3.4)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 option(BUILD_COVERAGE "Build coverage" OFF)
 
 project(Go_game)
 string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
 string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/SFML-include)
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/SFML-include)
 # add_library(${CMAKE_CURRENT_SOURCE_DIR}/lib/sfml-system
 #             ${CMAKE_CURRENT_SOURCE_DIR}/lib/sfml-window
 #             ${CMAKE_CURRENT_SOURCE_DIR}/lib/sfml-graphics

@@ -40,14 +40,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Go_game::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Go_game-Debug-c7e0ef372fc087d2ba23.json",
+					"jsonFile" : "target-Go_game-Debug-b020a9b553fc7f3b1368.json",
 					"name" : "Go_game",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "start_game::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-start_game-Debug-03447a7e26aa38c5496c.json",
+					"jsonFile" : "target-start_game-Debug-6331a4de9f04a714ba44.json",
 					"name" : "start_game",
 					"projectIndex" : 0
 				}
