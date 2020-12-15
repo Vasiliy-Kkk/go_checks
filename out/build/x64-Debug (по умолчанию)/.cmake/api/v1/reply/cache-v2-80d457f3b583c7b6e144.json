@@ -14,18 +14,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "C:/Users/Василий/Documents/GitHub/go_checks/lib_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for C:/Users/Василий/Documents/GitHub/go_checks/lib."
-				}
-			],
-			"type" : "PATH",
-			"value" : "C:/Users/Василий/Documents/GitHub/go_checks/lib_DIR-NOTFOUND"
-		},
-		{
 			"name" : "CMAKE_AR",
 			"properties" : 
 			[
@@ -1084,18 +1072,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/Василий/Documents/GitHub/go_checks"
-		},
-		{
-			"name" : "lib_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for lib."
-				}
-			],
-			"type" : "PATH",
-			"value" : "lib_DIR-NOTFOUND"
 		}
 	],
 	"kind" : "cache",

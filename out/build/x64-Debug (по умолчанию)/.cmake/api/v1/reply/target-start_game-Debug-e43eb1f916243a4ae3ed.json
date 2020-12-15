@@ -69,7 +69,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/Василий/Documents/GitHub/go_checks/lib"
+					"path" : "C:/Users/Василий/Documents/GitHub/go_checks/SFML-include"
 				},
 				{
 					"backtrace" : 4,
@@ -105,22 +105,22 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "sfml-system.lib",
+				"fragment" : "..\\..\\..\\lib\\sfml-system",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "sfml-window.lib",
+				"fragment" : "..\\..\\..\\lib\\sfml-window",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "sfml-graphics.lib",
+				"fragment" : "..\\..\\..\\lib\\sfml-graphics",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "sfml-network.lib",
+				"fragment" : "..\\..\\..\\lib\\sfml-network",
 				"role" : "libraries"
 			},
 			{

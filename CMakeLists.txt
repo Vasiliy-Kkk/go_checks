@@ -7,7 +7,7 @@ project(Go_game)
 string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
 string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/SFML-include)
 
 # add_library(${CMAKE_CURRENT_SOURCE_DIR}/lib/sfml-system
 #             ${CMAKE_CURRENT_SOURCE_DIR}/lib/sfml-window
@@ -34,6 +34,11 @@ target_include_directories(Go_game
 target_include_directories(start_game
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-target_link_libraries(start_game sfml-system sfml-window sfml-graphics  sfml-network Go_game)
+target_link_libraries(start_game ${CMAKE_CURRENT_SOURCE_DIR}/lib/sfml-system
+                                 ${CMAKE_CURRENT_SOURCE_DIR}/lib/sfml-window
+                                 ${CMAKE_CURRENT_SOURCE_DIR}/lib/sfml-graphics 
+                                 ${CMAKE_CURRENT_SOURCE_DIR}/lib/sfml-network
+                                 Go_game
+)
 
 # target_link_libraries (start_game PUBLIC Go_game)

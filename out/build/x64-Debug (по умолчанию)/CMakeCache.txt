@@ -17,9 +17,6 @@
 //Build coverage
 BUILD_COVERAGE:BOOL=OFF
 
-//The directory containing a CMake configuration file for C:/Users/Василий/Documents/GitHub/go_checks/lib.
-"C:/Users/Василий/Documents/GitHub/go_checks/lib_DIR":PATH=C:/Users/Василий/Documents/GitHub/go_checks/lib_DIR-NOTFOUND
-
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/lib.exe
 
@@ -203,9 +200,6 @@ Go_game_BINARY_DIR:STATIC=C:/Users/Василий/Documents/GitHub/go_checks/out
 
 //Value Computed by CMake
 Go_game_SOURCE_DIR:STATIC=C:/Users/Василий/Documents/GitHub/go_checks
-
-//The directory containing a CMake configuration file for lib.
-lib_DIR:PATH=lib_DIR-NOTFOUND
 
 
 ########################
